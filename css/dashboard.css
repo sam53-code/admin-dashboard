@@ -1,0 +1,55 @@
+@import url("root.css");
+
+/* Global reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  grid-template-areas: "sidebar content";
+}
+
+.sidebar {
+  background-color: var(--color-bg-sidebar);
+  grid-area: sidebar;
+}
+
+/* Main content layout */
+
+.main-content {
+  display: grid;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  grid-template-rows: var(--header-height) 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.site-header {
+  background-color: var(--color-surface);
+  max-height: var(--header-height);
+  grid-area: header;
+}
+
+.dashboard-main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.site-footer {
+  background-color: var(--color-surface);
+  grid-area: footer;
+}
