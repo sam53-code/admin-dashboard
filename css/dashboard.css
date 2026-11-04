@@ -10,6 +10,7 @@
 
 body {
   min-height: 100vh;
+  font-family: sans-serif;
 }
 
 .dashboard-container {
@@ -52,9 +53,118 @@ body {
   }
 }
 
+/*  Header Layout   */
+
+.site-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: var(--space-2);
+  padding: var(--space-5) var(--space-12);
+  background-color: var(--color-surface-muted);
+  height: fit-content;
+  grid-area: header;
+
+  .profile-pic {
+    width: var(--space-6);
+    height: var(--space-6);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .icons {
+    width: var(--space-6);
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(470%)
+      hue-rotate(177deg) brightness(98%) contrast(54%);
+    &:hover img {
+      opacity: 0.7;
+    }
+  }
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.user-info,
+.btn {
+  justify-content: flex-end;
+}
+
+/*   Search bar layout   */
+
+#searchbar {
+  width: 80%;
+  height: var(--space-1);
+  border-top-left-radius: var(--radius-pill);
+  border-bottom-left-radius: var(--radius-pill);
+  border: none;
+  background-color: var(--color-background);
+  padding: var(--space-4);
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+    /* outline: var(--border-default); */
+  }
+
+  &::placeholder {
+    font-style: italic;
+    font-size: var(--space-4);
+  }
+}
+
+.search-bar {
+  gap: 0;
+
+  label {
+    width: fit-content;
+    padding: var(--space-1) var(--space-3);
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 100%;
+    font-family: inherit;
+    font-size: var(--space-4);
+    border: none;
+    font-weight: bold;
+    background-color: var(--color-background-dark);
+    color: var(--color-text);
+    border-top-right-radius: var(--radius-pill);
+    border-bottom-right-radius: var(--radius-pill);
+    cursor: pointer;
+  }
+}
+
+.btn button {
+  padding: 6px var(--space-3);
+  font-weight: bold;
+  border: none;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  cursor: pointer;
+}
+
+.admin-profile {
+  font-size: var(--space-3);
+  span {
+    font-size: var(--space-4);
+    display: block;
+    font-weight: bold;
+  }
+  .main-profile-pic {
+    width: var(--space-10);
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
 /* Main content layout */
 
 .main-content {
+  grid-area: content;
   display: grid;
   color: var(--color-text);
   background-color: var(--color-background);

@@ -5,13 +5,14 @@
   --color-primary-active: #106b99;
 
   --color-background: #e3e9f1;
+  --color-background-dark: #c1cbd5;
   --color-bg-sidebar: #2093d1;
   --color-surface: #f3f6fa;
   --color-surface-muted: #ffffff;
 
   --color-text: #111827;
   --color-text-muted: #64707d;
-  --color-text-inverse: #f0eded;
+  --color-text-inverse: #ececec;
 
   --color-accent: #f4b51c;
   --color-success: #198754;
@@ -19,9 +20,9 @@
   --color-danger: #dc3545;
   --color-info: #2689c7;
 
-  --color-border: #d5dce5;
+  --color-border: #0c0d0f;
   --color-divider: #e1e5eb;
-  --color-overlay: rgb(17 24 39 / 45%);
+  --color-overlay: rgba(38, 39, 43, 0.45);
 
   /*  Spacing scale  */
   --space-0: 0;
@@ -35,20 +36,6 @@
   --space-10: 2.5rem; /* 40px */
   --space-12: 3rem; /* 48px */
   --space-16: 4rem; /* 64px */
-
-  /*  Margin presets  */
-  --margin-section: var(--space-8);
-  --margin-card: var(--space-4);
-  --margin-inline: var(--space-4);
-  --margin-stack: var(--space-3);
-
-  /*  Padding presets  */
-  --padding-page: var(--space-6);
-  --padding-section: var(--space-5);
-  --padding-card: var(--space-5);
-  --padding-card-compact: var(--space-4);
-  --padding-control: var(--space-3) var(--space-4);
-  --padding-sidebar: var(--space-6) var(--space-4);
 
   /*  Borders  */
   --border-width-thin: 1px;
@@ -76,7 +63,7 @@
 
   /*  Layout  */
   --sidebar-width: 13.75rem;
-  --header-height: 5rem;
+  --header-height: 7rem;
   --content-max-width: 100rem;
 
   /*  Transitions  */
