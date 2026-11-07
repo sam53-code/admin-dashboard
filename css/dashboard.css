@@ -144,6 +144,9 @@ body {
   background-color: var(--color-primary);
   color: var(--color-text-inverse);
   cursor: pointer;
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
 }
 
 .admin-profile {
@@ -153,14 +156,15 @@ body {
     display: block;
     font-weight: bold;
   }
-  .main-profile-pic {
-    width: var(--space-10);
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-  }
 }
 
+.main-profile-pic,
+.username img {
+  width: var(--space-10);
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
 /* Main content layout */
 
 .main-content {
@@ -177,16 +181,15 @@ body {
 
 /*  Header Layout   */
 
-.site-header {
-  background-color: var(--color-surface);
-  max-height: var(--header-height);
-  grid-area: header;
-}
-
 .dashboard-main {
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  margin-top: var(--space-3);
+  h2 {
+    padding: var(--space-2);
+    margin: 0 var(--space-4);
+  }
 }
 
 .site-footer {
@@ -246,6 +249,58 @@ body {
         opacity: 0.7;
         cursor: pointer;
       }
+    }
+  }
+}
+
+.announcement-container,
+.trending-container {
+  h2 {
+    padding: var(--space-2);
+    margin: 0 var(--space-3);
+  }
+
+  p {
+    color: var(--color-text-muted);
+    padding-top: var(--space-1);
+  }
+
+  .announcement-section,
+  .trending-cards {
+    display: flex;
+    flex-direction: column;
+    margin: var(--space-3);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    background-color: var(--color-surface-muted);
+
+    hr,
+    .username {
+      margin: var(--space-2) 0;
+    }
+  }
+
+  .username {
+    display: flex;
+    background-color: var(--color-surface-muted);
+
+    a {
+      text-decoration: none;
+      color: var(--color-text);
+      font-weight: bold;
+    }
+
+    p {
+      font-style: italic;
+    }
+
+    img {
+      cursor: pointer;
+      margin-right: var(--space-3);
+    }
+
+    span {
+      display: block;
     }
   }
 }
