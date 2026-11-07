@@ -1,13 +1,13 @@
 :root {
   /*  Colors  */
-  --color-primary: #2387e4;
-  --color-primary-hover: #0e4d88;
+  --color-primary: #386590;
+  --color-primary-hover: #6a95ba;
   --color-primary-active: #106b99;
   --color-primary-bg: #d1f8df74;
 
-  --color-background: #e3e9f1;
+  --color-background: #9eb8d087;
   --color-background-dark: #c1cbd5;
-  --color-bg-sidebar: #2093d1;
+  --color-bg-sidebar: #335c81;
   --color-surface: #f3f6fa;
   --color-surface-muted: #ffffff;
 
@@ -43,7 +43,7 @@
   /*  Borders  */
   --border-width-thin: 1px;
   --border-width-medium: 2px;
-  --border-width-accent: 5px;
+  --border-width-accent: 6px;
 
   --border-default: var(--border-width-thin) solid var(--color-border);
   --border-divider: var(--border-width-thin) solid var(--color-divider);
