@@ -2,7 +2,7 @@
   /*  Colors  */
   --color-primary: #386590;
   --color-primary-hover: #6a95ba;
-  --color-primary-active: #106b99;
+  --color-primary-active: #007dbb;
   --color-primary-bg: #d1f8df74;
 
   --color-background: #9eb8d087;
@@ -11,8 +11,8 @@
   --color-surface: #f3f6fa;
   --color-surface-muted: #ffffff;
 
-  --color-text: #111827;
-  --color-text-muted: #64707d;
+  --color-text: #000000;
+  --color-text-muted: #707896;
   --color-text-inverse: #ececec;
 
   --color-accent: #f4b51c;
